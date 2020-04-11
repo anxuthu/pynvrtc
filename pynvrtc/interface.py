@@ -51,7 +51,8 @@ NVRTC_ERROR_BUILTIN_OPERATION_FAILURE = 7
 def encode_str(s):
     if is_python2:
         return s
-    return s.encode("utf-8")
+    #return s.encode("utf-8")
+    return bytes(s, "utf-8")
 
 
 def encode_str_list(str_list):
